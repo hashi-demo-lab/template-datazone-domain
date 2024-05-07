@@ -74,4 +74,5 @@ variable "datazone_projects" {
       description    = "shared environment project"
       glossary_terms = []
     }
+  }
 }
