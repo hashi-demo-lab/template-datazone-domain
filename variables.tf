@@ -38,6 +38,7 @@ variable "tags" {
 variable "region" {
   description = "The region to deploy the domain"
   type        = string
+  default     = "ap-southeast-2"
 }
 
 # Environment Blueprints - today only DefaultDataWarehouse, DefaultDataLake
@@ -49,6 +50,17 @@ variable "environment_blueprints" {
     provisioning_role_arn            = optional(string)
     manage_access_role_arn           = optional(string)
   }))
+  default = {
+    DefaultDataWarehouse = {
+      enabled_regions                  = ["ap-southeast-2"]
+      environment_blueprint_identifier = "DefaultDataWarehouse"
+    }
+    DefaultDataLake = {
+      enabled_regions                  = ["ap-southeast-2"]
+      environment_blueprint_identifier = "DefaultDataLake"
+    }
+  }
+
 }
 
 variable "datazone_projects" {
@@ -57,4 +69,9 @@ variable "datazone_projects" {
     description    = optional(string)
     glossary_terms = optional(list(string))
   }))
+  default = {
+    "environment" = {
+      description    = "shared environment project"
+      glossary_terms = []
+    }
 }
