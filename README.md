@@ -1,8 +1,6 @@
 ## Requirements
 
-| Name | Version |
-|------|---------|
-| <a name="requirement_awscc"></a> [awscc](#requirement\_awscc) | ~> 0.76.0 |
+No requirements.
 
 ## Providers
 
@@ -39,12 +37,12 @@
 
 | Name | Description |
 |------|-------------|
-| <a name="output_awscc_executionrole"></a> [awscc\_executionrole](#output\_awscc\_executionrole) | n/a |
-| <a name="output_datazone_domain_id"></a> [datazone\_domain\_id](#output\_datazone\_domain\_id) | n/a |
-| <a name="output_datazone_portal"></a> [datazone\_portal](#output\_datazone\_portal) | n/a |
-| <a name="output_datazone_role_arn"></a> [datazone\_role\_arn](#output\_datazone\_role\_arn) | n/a |
-| <a name="output_datazone_role_id"></a> [datazone\_role\_id](#output\_datazone\_role\_id) | n/a |
-| <a name="output_datazone_status"></a> [datazone\_status](#output\_datazone\_status) | n/a |
-| <a name="output_environment_project_id"></a> [environment\_project\_id](#output\_environment\_project\_id) | n/a |
-| <a name="output_s3_datazone"></a> [s3\_datazone](#output\_s3\_datazone) | n/a |
-| <a name="output_s3_datazone_region"></a> [s3\_datazone\_region](#output\_s3\_datazone\_region) | n/a |
+| <a name="output_awscc_executionrole"></a> [awscc\_executionrole](#output\_awscc\_executionrole) | The AWS Control Tower Execution Role |
+| <a name="output_datazone_domain_id"></a> [datazone\_domain\_id](#output\_datazone\_domain\_id) | The ID of the DataZone Domain |
+| <a name="output_datazone_portal"></a> [datazone\_portal](#output\_datazone\_portal) | The DataZone Portal |
+| <a name="output_datazone_role_arn"></a> [datazone\_role\_arn](#output\_datazone\_role\_arn) | The ARN of the DataZone Role |
+| <a name="output_datazone_role_id"></a> [datazone\_role\_id](#output\_datazone\_role\_id) | The ID of the DataZone Role |
+| <a name="output_datazone_status"></a> [datazone\_status](#output\_datazone\_status) | The DataZone Status |
+| <a name="output_environment_project_id"></a> [environment\_project\_id](#output\_environment\_project\_id) | The ID of the Environment Project |
+| <a name="output_s3_datazone"></a> [s3\_datazone](#output\_s3\_datazone) | The S3 DataZone Bucket |
+| <a name="output_s3_datazone_region"></a> [s3\_datazone\_region](#output\_s3\_datazone\_region) | The S3 DataZone Bucket Region |
