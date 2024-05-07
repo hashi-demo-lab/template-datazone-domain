@@ -1,22 +1,17 @@
-## Place all your terraform resources here
-#  Locals at the top (if you are using them)
-#  Data blocks next to resources that are referencing them
-#  Reduce hard coded inputs where possible. They are used below for simplicity to show structure
+data "aws_caller_identity" "current" {}
 
-/* local {
-  # Local that is a map that is used for something
-  example-local {
-    key = value
-  }
+module "datazone_domain" {
+  source  = "app.terraform.io/tfc-demo-au/datazone-domain/awscc"
+  version = "~>  0.2.0"
+
+  aws_account                 = aws_caller_identity.current.account_id
+  datazone_domain_name        = var.datazone_domain_name
+  datazone_description        = var.datazone_domain_name
+  datazone_kms_key_identifier = var.datazone_kms_key_identifier
+  single_sign_on              = var.single_sign_on
+  tags                        = var.tags
+  region                      = var.region
+
+  environment_blueprints = var.environment_blueprints
+
 }
-
-data "vault_auth_backend" "kubernetes" {
-  namespace = var.namespace
-  path      = "kubernetes"
-}
-
-resource "vault_policy" "policies" {
-  namespace = var.namespace
-  name      = "name"
-  policy    = "policy"
-} */
