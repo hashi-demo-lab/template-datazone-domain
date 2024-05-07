@@ -72,7 +72,7 @@ variable "datazone_projects" {
   default = {
     "environment" = {
       description    = "shared environment project"
-      glossary_terms = []
+      glossary_terms = null
     }
   }
 }
