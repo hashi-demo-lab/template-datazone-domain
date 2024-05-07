@@ -70,7 +70,7 @@ variable "datazone_projects" {
     glossary_terms = optional(list(string))
   }))
   default = {
-    "environment" = {
+    environment = {
       description    = "shared environment project"
       glossary_terms = null
     }

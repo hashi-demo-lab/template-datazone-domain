@@ -15,3 +15,14 @@ environment_blueprints = {
       environment_blueprint_identifier = "DefaultDataLake"
     }
 }
+
+ datazone_projects = {
+    shared_env = {
+      description    = "shared environment project"
+      glossary_terms = null
+    }
+    data_team = {
+      description    = "Data Team Project 1"
+      glossary_terms = null
+    }
+}
